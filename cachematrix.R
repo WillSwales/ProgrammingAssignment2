@@ -1,7 +1,7 @@
 ## makeCacheMatrix() stores a matrix and its inverse.
-## cacheSolve() requires an argument that is returned by makeCacheMatrix()
-## in order to retrieve the inverse from the cached value that is stored 
-## in the makeCacheMatrix() object's environment.
+## cacheSolve() takes a makeCacheMatrix() object as an input
+## and - if it exists - will retrieve the matrix inverse from the cached value that is stored 
+## in the makeCacheMatrix() object's environment. If no inverse exists, the inverse is calculated and cached.
 
 ## makeCacheMatrix() - takes a matrix as an input and 
 ## returns a list object containing four functions
